@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brasil API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Consultar Tabela FIPE </h1>
+    </header>
+    <main>
+        <form>
+            <label for="code">Codigo do veiculo</label>
+            <div>
+                <input id="code" type="" value="005303-1" required />
+                <button type="submit" id="buscar">Buscar</button>
+            </div>
+            <select name="marca" id="marca">
+                <option value="-1">Selecione a marca</option>
+                <option value="A">VW - Volkswagen</option>
+                <option value="B">Fiat</option>
+                <option value="C">Honda</option>
+                <option value="D">Hyundai</option>
+            </select>
+            <select name="modelo" id="modelo">
+                <option value="-1">Selecione o modelo</option>
+                <option value="A">Fox</option>
+                <option value="B">Gol</option>
+                <option value="C">Voyage</option>
+            </select>
+            <select name="ano" id="ano" required>
+                <option value="-1">Selecione o ano</option>
+                <option value="A">2010</option>
+                <option value="B">2011</option>
+                <option value="C">2012</option>
+                <option value="D">2013</option>
+            </select>
+        </form>
+        <div id="infos"></div>
+    </main>
+</body>
+</html>
