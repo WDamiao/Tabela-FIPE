@@ -14,9 +14,10 @@ async function buscarInfo() {
     const dataBody = await data.json()
     dataBody.map(element => {
          divInfo.innerHTML +=`<div class="detalhes"><p>Modelo: ${element.modelo}</p>
-        <p>Valor: ${element.valor}</p>
-        <p>Marca: ${element.marca}</p>
-        <p>Ano: ${element.anoModelo}</p></div>
+         <p>Marca: ${element.marca}</p>
+         <p>Ano: ${element.anoModelo}</p>
+         <p>Valor: ${element.valor}</p>
+         </div>
         `
     });
     console.log(dataBody)
